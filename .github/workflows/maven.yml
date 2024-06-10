@@ -83,5 +83,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: jacoco-reports
-        path: /Users/runner/work/io2/io2/screenshots/
+        path: /Users/runner/work/iOS3/iOS3/screenshots/
 
