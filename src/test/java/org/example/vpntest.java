@@ -122,13 +122,13 @@ public class vpntest {
                 element.click();
                 Thread.sleep(900000); // Sleep for 1 second
                 //Thread.sleep(3000); // Sleep for 1 second
-                Thread.sleep(900000); // Sleep for 1 second
-                Thread.sleep(900000); // Sleep for 1 second
-                Thread.sleep(900000); // Sleep for 1 second
-                Thread.sleep(900000); // Sleep for 1 second
-                Thread.sleep(900000); // Sleep for 1 second
 
+                takeScreenHhot("check pause");
+
+                 try {
                 WebElement pause = driver.findElement(By.xpath("(//*[contains(@class,'yt-spec-button-shape-next--call-to-action')])[3]"));
+                takeScreenHhot("check paus end");
+                takeScreenHhot("start while");
                 while (pause.isDisplayed())
                 {
                     takeScreenHhot("atBeforePause");
@@ -137,6 +137,11 @@ public class vpntest {
                     Thread.sleep(900000);
 
                 }
+                 }
+                 } catch (Exception e) {
+takeScreenHhot("exe_at_while");
+                }
+
 
                 takeScreenHhot("beforeclose");
 
