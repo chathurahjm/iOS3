@@ -46,7 +46,7 @@ public class vpntest {
                 //ChromeOptions chromeOptions = new ChromeOptions();
             } else {
 
-                System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver-mac-x64");
 
 
             }
@@ -78,7 +78,7 @@ public class vpntest {
                 driver.get("https://www.youtube.com/@day2day/playlists");
 
                 Thread.sleep(8000); // Sleep
-
+            takeScreenHhot("Just navigate");
 
 //            try {
 //                takeScreenHhot("Loadyoub");
@@ -104,23 +104,23 @@ public class vpntest {
                 System.out.println(a);
 
 
-                try {
-                    WebElement cookies = driver.findElement(By.xpath("//*[text()='Accept all']"));
-                    if (cookies.isDisplayed()) {
-                        cookies.click();
-                        Thread.sleep(8000); // Sleep
-                        takeScreenHhot("cookies");
-                    }
-                } catch (Exception e) {
+                // try {
+                //     WebElement cookies = driver.findElement(By.xpath("//*[text()='Accept all']"));
+                //     if (cookies.isDisplayed()) {
+                //         cookies.click();
+                //         Thread.sleep(8000); // Sleep
+                //         takeScreenHhot("cookies");
+                //     }
+                // } catch (Exception e) {
 
-                }
+                // }
 
 
                 WebElement element = driver.findElement(By.xpath("(//*[@class='yt-simple-endpoint style-scope ytd-playlist-thumbnail'])[4]"));
 
                 // Simulate pressing the space button on the element
                 element.click();
-                Thread.sleep(900000); // Sleep for 1 second
+                Thread.sleep(1700000); // Sleep for 1 second
                 //Thread.sleep(3000); // Sleep for 1 second
 
                 takeScreenHhot("check pause");
@@ -147,6 +147,7 @@ takeScreenHhot("exe_at_while");
 
                 driver.quit();
             } catch (Exception e) {
+                takeScreenHhot("1exe_at_while");
                 System.out.println(e.toString());
             }
 
