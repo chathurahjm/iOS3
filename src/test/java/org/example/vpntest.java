@@ -78,7 +78,7 @@ public class vpntest {
                 driver.get("https://www.youtube.com/@day2day/playlists");
 
                 Thread.sleep(8000); // Sleep
-            takeScreenHhot("Just navigate");
+            takeScreenHhot("Justnavigate");
 
 //            try {
 //                takeScreenHhot("Loadyoub");
