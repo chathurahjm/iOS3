@@ -41,7 +41,7 @@ public class vpntest {
             if (osName.contains("windows")) {
                 WebDriverManager.chromedriver().setup();
             } else {
-                System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver-mac-x64");
+                System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver-mac-arm64");
             }
 
             try {
