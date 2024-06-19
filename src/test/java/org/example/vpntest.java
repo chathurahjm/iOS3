@@ -70,7 +70,7 @@ public class vpntest {
 
                 WebElement element = driver.findElement(By.xpath("(//*[@class='yt-simple-endpoint style-scope ytd-playlist-thumbnail'])[4]"));
                 element.click();
-                Thread.sleep(1700000);
+                Thread.sleep(3700000);
 
                 takeScreenHhot("check pause");
 
@@ -78,6 +78,7 @@ public class vpntest {
                     WebElement pause = driver.findElement(By.xpath("(//*[contains(@class,'yt-spec-button-shape-next--call-to-action')])[3]"));
                     takeScreenHhot("check paus end");
                     takeScreenHhot("start while");
+                    
                     while (pause.isDisplayed()) {
                         takeScreenHhot("atBeforePause");
                         pause.click();
