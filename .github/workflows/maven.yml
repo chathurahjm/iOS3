@@ -39,8 +39,7 @@ jobs:
              ls
              pwd
 
-             sudo chmod -R 777  /opt/homebrew/opt/openvpn/sbin/openvpn
-             # sudo sed -i 's/auth-user-pass/auth-user-pass credentials/g' data.ovpn
+              sudo brew services start openvpn
               sed -i '' 's/auth-user-pass/auth-user-pass credentials/g' data.ovpn
              sudo nohup openvpn data.ovpn &
              curl ifconfig.me
